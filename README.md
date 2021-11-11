@@ -5,3 +5,8 @@
 	width="200"
 	style="float: left; margin-right: 10px;" />
 </p>
+
+
+Requisitos
+======
+Si tiene fallas con el servidor php, es recomendable tenerlo instalado en el sistema operativo. Es importante también aclarar que la herramienta solo funciona para el sistema de Windows.
