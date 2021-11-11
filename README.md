@@ -11,6 +11,6 @@ Requisitos
 ======
 Si tiene fallas con php, es recomendable tenerlo instalado en el sistema operativo 
 ```
-[Download PHP](https://windows.php.net/download/).
+https://windows.php.net/download/
 ```
 Es importante también aclarar que la herramienta solo funciona para el sistema de Windows.
