@@ -7,22 +7,21 @@
 </p>
 
 #### Descripción
-======
+
 Venom es una herramienta de Pentesting e ingenieria social, fue creada con intenciones educacionales, por favor usar con discreción. No nos hacemos responsables de cualquier uso que vaya en contra de la ley
 
 ### ¿Como funciona?
-======
+
 La herramienta requiere de parámetros para funcionar, su correcta ejecución desde una terminal es:
 <p align="center">
 <img src="images/venom-h.PNG"
 	alt="Ayuda"
-	width="200"
 	style="float: left; margin-right: 10px;" />
 </p>
 
 
 ### Requisitos
-======
+
 Si tiene fallas con php, es recomendable tenerlo instalado en el sistema operativo 
 
 [Descargar php](https://windows.php.net/download/).
