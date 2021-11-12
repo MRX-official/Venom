@@ -13,12 +13,14 @@ Requisitos
 ======
 Si tiene fallas con php, es recomendable tenerlo instalado en el sistema operativo 
 ```
-https://windows.php.net/download/
+[Descargar php](https://windows.php.net/download/).
 ```
 Tener Python versión 3 en adelante
 ```
-https://www.python.org/downloads/
+[Descargar Python](https://www.python.org/downloads/).
 ```
 Es importante también aclarar que la herramienta solo funciona para el sistema de Windows.
+
+
 
 
