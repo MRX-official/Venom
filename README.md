@@ -13,4 +13,11 @@ Si tiene fallas con php, es recomendable tenerlo instalado en el sistema operati
 ```
 https://windows.php.net/download/
 ```
+Tener Python versión 3 en adelante
+```
+https://www.python.org/downloads/
+```
 Es importante también aclarar que la herramienta solo funciona para el sistema de Windows.
+
+#### Descripción
+Venom es una herramienta de Pentesting e ingenieria social, fue creada con intenciones educacionales, por favor usar con discreción. No nos hacemos responsables de cualquier uso que vaya en contra de la ley
