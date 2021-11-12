@@ -4,6 +4,7 @@ import subprocess
 import lxml.etree as ET
 import http.server
 import os
+import sys
 import cgi
 import nmap
 import lxml.html
@@ -46,6 +47,9 @@ def subdomain_find(domain):
             except:
                 pass
 
+def web_scraping():
+    p = subprocess.Popen(["powershell.exe", "./Web_Scraping.ps1"], stdout= sys.stdout)
+    p.communicate()
 
 def default_scan(Host):
     os.chdir("nmap")
@@ -106,9 +110,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-host", dest = "host", help = "Target Specification [Optional if you want to scan a network]")
     parser.add_argument("-ports", dest = "ports", help = "Specify the ports for the network scan")
+    parser.add_argument("-web", dest = "web", help = "Information gathering with web scraping [Optional / Dont need argument]", action="store_true")
     parser.add_argument("-subdomains", dest = "domain", help = "This option discover the subdomains of one host or domain")
     parser.add_argument("-shodan", dest = "shodan", help = "Use Shodan API to search public hosts [Optional]")
-    parser.add_argument("-s", help = "Social Engineer Mode [Optional]" , action="store_true")
+    parser.add_argument("-s", help = "Social Engineer Mode [Optional / Dont need argument]" , action="store_true")
     params = parser.parse_args()
     if params.host and params.ports and not params.phishing:
         full_scan(params.host,params.ports)
@@ -120,3 +125,5 @@ if __name__ == "__main__":
         API_Shodan.search(params.shodan)
     elif params.domain:
         subdomain_find(params.domain)
+    elif params.web:
+        web_scraping()
