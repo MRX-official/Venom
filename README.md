@@ -21,10 +21,15 @@ La herramienta requiere de parámetros para funcionar, su correcta ejecución de
 </p>
 
 **-s**
+
 Este parametro es para iniciar la herramienta de ingeniera social, lo cual ejecuta un menú con 2 opciones principales
+
 1- Email Vector Attack
+ 
  1.1- Esto inicia 2 input, uno del correo remitente y otro en el que se ingresará el correo de la victima
+
 2- Create a fake ID
+ 
  2.1- Crear una identidad falsa con el modulo faker
  
 Se ve de esta manera
