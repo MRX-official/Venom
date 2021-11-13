@@ -50,28 +50,28 @@ Se ve de esta manera:
 ***python venom.py -host [Objetivo] -ports [Especificación de puertos]***: Esta herramienta realiza un escaneo a un host especificado y se pueden seleccionar puertos en especifico, su ejemplo de ejecución:
 
 <p align="center">
-<img src="images/host.png"
+<img src="images/host.PNG"
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 	
 ***python venom.py -web***: Esta opción no ocupa de un parametro y su ejecución se ve de la siguiente manera <-- AQUÍ VA EVIDENCIA DE USO DE WEB
 	
 <p align="center">
-<img src="images/Social_Option.png"   
+<img src="images/Social_Option.PNG"   
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 
 ***python venom.py -subdomain [Nombre de dominio]***: Aquí se obtienen todos los subdominios de un dominio en especifico, como por ejemplo:
 	
 <p align="center">
-<img src="images/subdomain.png"   
+<img src="images/subdomain.PNG"   
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 	
 ***python venom.py -shodan [Busqueda]***: Uso del API de shodan para realizar una busqueda en el buscador de Shodan
 	
 <p align="center">
-<img src="images/shodan.png"   
+<img src="images/shodan.PNG"   
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 
