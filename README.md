@@ -8,7 +8,7 @@
 
 #### Descripción
 
-Venom es una herramienta de Pentesting e ingenieria social, fue creada con intenciones educacionales, por favor usar con discreción. No nos hacemos responsables de cualquier uso que vaya en contra de la ley
+Venom es una herramienta de Pentesting e ingenieria social, fue creada con intenciones educacionales, por favor usar con discreción. No nos hacemos responsables de cualquier uso que vaya en contra de la ley.
 ***Es importante también aclarar que la herramienta solo funciona para el sistema operativo de Windows.***
 
 ### ¿Como funciona?
