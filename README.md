@@ -43,7 +43,7 @@ La herramienta requiere de parámetros para su correcta ejecución desde una ter
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 
-2- **Create a fake ID**: Crear una identidad falsa con el modulo faker y además un correo para dicha identidad, como se ve a continuación
+2- **Create a fake ID**: Crea una identidad falsa, como se ve a continuación
 
 <p align="center">
 <img src="images/social_tool.PNG"
