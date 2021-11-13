@@ -53,12 +53,14 @@ La herramienta requiere de parámetros para su correcta ejecución desde una ter
 3- **Windows Shell Reverse_TCP**: Crea un archivo py que sirve para hacer una conexion TCP.
  
 Se ve de esta manera:
-	
 <p align="center">
-<img src="images/Social_Option.png"
+<img src="images/rs.png"
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
-	
+<p align="center">
+<img src="images/rs2.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
 ###### Pentesting 
 
 **Las herramientas de pentesting son variadas y dependen del párametro**
