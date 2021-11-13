@@ -2,10 +2,11 @@ import argparse
 import API_Shodan
 import subprocess
 import lxml.etree as ET
-import http.server
 import os
 import sys
 import cgi
+import getpass
+import logging
 import clientTCP
 import lxml.html
 import SendEmail
@@ -31,6 +32,31 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
+console_logging_format = '%(levelname)s: %(message)s'
+file_logging_format = '%(levelname)s: %(asctime)s: %(message)s'
+
+# configure logger
+logging.basicConfig(level=logging.DEBUG, format=console_logging_format)
+logger = logging.getLogger()
+# create a file handler for output file
+handler = logging.FileHandler('console_and_file.log')
+
+# set the logging level for log file
+handler.setLevel(logging.INFO)
+# create a logging format
+formatter = logging.Formatter(file_logging_format)
+handler.setFormatter(formatter)
+
+# add the handlers to the logger
+logger.addHandler(handler)
+
+# output logging messages
+logger.info("Executing script - info")
+logger.debug("save this to the log - debug")
+logger.error("save this to the log - error")
+logger.warning("save this to the log - warning")
+logger.critical("save this to the log - critical")
 
 # Ref. https://www.techgeekbuzz.com/how-to-make-a-subdomain-scanner-in-python/
 def subdomain_find(domain):
