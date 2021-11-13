@@ -1,0 +1,6 @@
+colorama==0.4.4
+Faker==9.8.0
+lxml==4.6.3
+pyngrok==5.1.0
+requests==2.25.1
+shodan==1.25.0
