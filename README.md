@@ -8,7 +8,7 @@
 
 #### Descripción
 
-Venom es una herramienta de Pentesting e ingenieria social, fue creada con intenciones educacionales, por favor usar con discreción. No nos hacemos responsables de cualquier uso que vaya en contra de la ley.
+Venom es una herramienta de Pentesting e ingenieria social hecha en python, fue creada con intenciones educacionales y de automatización. No nos hacemos responsables de cualquier uso que vaya en contra de lo etico y legal.
 ***Es importante también aclarar que la herramienta solo funciona para el sistema operativo de Windows.***
 
 ### ¿Como funciona?
@@ -22,7 +22,7 @@ La herramienta requiere de parámetros para su correcta ejecución desde una ter
 
 **-s**
 
-La herramienta de ingeniera social ejecuta un menú con 3 opciones principales
+El modo de ingeniera social ejecuta un menú con 3 opciones principales
 
 1- **Email Vector Attack**: Esto inicia 2 input, uno del correo remitente y otro en el que se ingresará el correo de la victima
 
