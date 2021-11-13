@@ -8,7 +8,7 @@
 
 #### Descripción
 
-Venom es una herramienta de Pentesting e ingenieria social hecha en python, fue creada con intenciones educacionales y de automatización. No nos hacemos responsables de cualquier uso que vaya en contra de lo etico y legal.
+Venom es una herramienta de Pentesting e ingenieria social, fue creada con intenciones educacionales, por favor usar con discreción. No nos hacemos responsables de cualquier uso que vaya en contra de la ley.
 ***Es importante también aclarar que la herramienta solo funciona para el sistema operativo de Windows.***
 
 ### ¿Como funciona?
@@ -20,19 +20,58 @@ La herramienta requiere de parámetros para su correcta ejecución desde una ter
 	style="float: left; margin-right: 10px;" />
 </p>
 
-**-s**
+###### Ingenieria social
 
-El modo de ingeniera social ejecuta un menú con 3 opciones principales
+**La herramienta de ingeniera social ejecuta con el párametro _python venom.py -s_ y muestra un menú con 3 opciones:**
 
-1- **Email Vector Attack**: Esto inicia 2 input, uno del correo remitente y otro en el que se ingresará el correo de la victima
+1- **Email Vector Attack**: Envia un correo a una victima desde un correo atacante, (puede ser uno personal pero recomendamos usar el creado con faker en la opción de Create a Fake ID) la parte donde se envia el correo se ve de esta forma:
 
-2- **Create a fake ID**: Crear una identidad falsa con el modulo faker
+
+2- **Create a fake ID**: Crear una identidad falsa con el modulo faker y además un correo para dicha identidad, como se ve a continuación
+
+<p align="center">
+<img src="images/social_tool.PNG"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
 
 3- **Windows Shell Reverse_TCP**: Crea un archivo py que sirve para hacer una conexion TCP.
  
-Se ve de esta manera
+Se ve de esta manera:
+	
 <p align="center">
 <img src="images/Social_Option.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+	
+###### Pentesting 
+
+**Las herramientas de pentesting son variadas y dependen del párametro**
+
+***python venom.py -host [Objetivo] -ports [Especificación de puertos]***: Esta herramienta realiza un escaneo a un host especificado y se pueden seleccionar puertos en especifico, su ejemplo de ejecución:
+
+<p align="center">
+<img src="images/host.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+	
+***python venom.py -web***: Esta opción no ocupa de una parametro y su ejecución se ve de la siguiente manera <-- AQUÍ VA EVIDENCIA DE USO DE WEB
+	
+<p align="center">
+<img src="images/Social_Option.png"   
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+
+***python venom.py -subdomain [Nombre de dominio]***: Aquí se obtienen todos los subdominios de un dominio en especifico, como por ejemplo:
+	
+<p align="center">
+<img src="images/subdomain.png"   
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+	
+***python venom.py -shodan [Busqueda]***: Uso del API de shodan para realizar una busqueda en el buscador de Shodan
+	
+<p align="center">
+<img src="images/shodan.png"   
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 
