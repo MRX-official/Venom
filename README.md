@@ -54,7 +54,7 @@ Se ve de esta manera:
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 	
-***python venom.py -web***: Esta opción no ocupa de una parametro y su ejecución se ve de la siguiente manera <-- AQUÍ VA EVIDENCIA DE USO DE WEB
+***python venom.py -web***: Esta opción no ocupa de un parametro y su ejecución se ve de la siguiente manera <-- AQUÍ VA EVIDENCIA DE USO DE WEB
 	
 <p align="center">
 <img src="images/Social_Option.png"   
