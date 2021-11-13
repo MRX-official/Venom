@@ -50,7 +50,14 @@ Se ve de esta manera:
 ***python venom.py -host [Objetivo] -ports [Especificación de puertos]***: Esta herramienta realiza un escaneo a un host especificado con la herramienta de nmap y se pueden seleccionar puertos en especifico, al final te genera un reporte html, su ejemplo de ejecución:
 
 <p align="center">
-<img src="images/host.PNG"
+<img src="images/host_ports.PNG"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+	
+El reporte del escaneo nmap debe verse de la siguiente manera:
+	
+<p align="center">
+<img src="images/nmap_report.PNG"
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 	
