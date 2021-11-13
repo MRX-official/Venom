@@ -22,15 +22,17 @@ La herramienta requiere de parámetros para su correcta ejecución desde una ter
 
 **-s**
 
-La herramienta de ingeniera social ejecuta un menú con 2 opciones principales
+La herramienta de ingeniera social ejecuta un menú con 3 opciones principales
 
 1- **Email Vector Attack**: Esto inicia 2 input, uno del correo remitente y otro en el que se ingresará el correo de la victima
 
 2- **Create a fake ID**: Crear una identidad falsa con el modulo faker
+
+3- **Windows Shell Reverse_TCP**: Crea un archivo py que sirve para hacer una conexion TCP.
  
 Se ve de esta manera
 <p align="center">
-<img src="images/social_tool.PNG"
+<img src="images/Social_Option.png"
 	alt="Ayuda"
 	style="float: left; margin-right: 10px;" />
 
