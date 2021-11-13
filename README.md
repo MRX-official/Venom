@@ -26,6 +26,22 @@ La herramienta requiere de parámetros para su correcta ejecución desde una ter
 
 1- **Email Vector Attack**: Envia un correo a una victima desde un correo atacante, (puede ser uno personal pero recomendamos usar el creado con faker en la opción de Create a Fake ID) la parte donde se envia el correo se ve de esta forma:
 
+<p align="center">
+<img src="images/phishing1.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+<p align="center">
+<img src="images/phishing2.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+<p align="center">
+<img src="images/email.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+<p align="center">
+<img src="images/login_page.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
 
 2- **Create a fake ID**: Crear una identidad falsa con el modulo faker y además un correo para dicha identidad, como se ve a continuación
 
