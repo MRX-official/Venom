@@ -47,7 +47,7 @@ Se ve de esta manera:
 
 **Las herramientas de pentesting son variadas y dependen del párametro**
 
-***python venom.py -host [Objetivo] -ports [Especificación de puertos]***: Esta herramienta realiza un escaneo a un host especificado y se pueden seleccionar puertos en especifico, su ejemplo de ejecución:
+***python venom.py -host [Objetivo] -ports [Especificación de puertos]***: Esta herramienta realiza un escaneo a un host especificado con la herramienta de nmap y se pueden seleccionar puertos en especifico, al final te genera un reporte html, su ejemplo de ejecución:
 
 <p align="center">
 <img src="images/host.PNG"
@@ -56,7 +56,14 @@ Se ve de esta manera:
 	
 ***python venom.py -web***: Esta opción no ocupa de un parametro y su ejecución se ve de la siguiente manera 
 	
-<-- AQUÍ VA EVIDENCIA DE USO DE WEB
+<p align="center">
+<img src="images/web_scrap.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
+<p align="center">
+<img src="images/web_scrap2.png"
+	alt="Ayuda"
+	style="float: left; margin-right: 10px;" />
 
 ***python venom.py -subdomain [Nombre de dominio]***: Aquí se obtienen todos los subdominios de un dominio en especifico, como por ejemplo:
 	
