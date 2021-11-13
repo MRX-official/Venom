@@ -13,7 +13,7 @@ Venom es una herramienta de Pentesting e ingenieria social, fue creada con inten
 
 ### ¿Como funciona?
 
-La herramienta requiere de parámetros para funcionar, su correcta ejecución desde una terminal es:
+La herramienta requiere de parámetros para su correcta ejecución desde una terminal:
 <p align="center">
 <img src="images/venom-h.PNG"
 	alt="Ayuda"
@@ -22,7 +22,7 @@ La herramienta requiere de parámetros para funcionar, su correcta ejecución de
 
 **-s**
 
-Este parametro es para iniciar la herramienta de ingeniera social, lo cual ejecuta un menú con 2 opciones principales
+La herramienta de ingeniera social ejecuta un menú con 2 opciones principales
 
 1- **Email Vector Attack**: Esto inicia 2 input, uno del correo remitente y otro en el que se ingresará el correo de la victima
 
