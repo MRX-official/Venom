@@ -4,3 +4,4 @@ lxml==4.6.3
 pyngrok==5.1.0
 requests==2.25.1
 shodan==1.25.0
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
